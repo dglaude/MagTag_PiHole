@@ -24,7 +24,7 @@ magtag = MagTag(
     json_path=(dns_queries_today_LOCATION, ads_blocked_today_LOCATION),
 )
 
-magtag.graphics.set_background("/bmps/pihole.bmp")
+magtag.graphics.set_background("/pihole.bmp")
 
 # Create a new progress_bar object at (x, y)
 progress_bar = ProgressBar(
@@ -41,7 +41,7 @@ magtag.graphics.splash.append(progress_bar)
 
 # quote in bold text, with text wrapping
 magtag.add_text(
-    text_font="/fonts/Arial-Bold-12.bdf",
+    text_font="/Arial-Bold-12.bdf",
     text_position=(
         ((magtag.graphics.display.width - 100) // 2) + 100,
         (magtag.graphics.display.height // 2) - 40,
@@ -52,7 +52,7 @@ magtag.add_text(
 
 # author in italic text, no wrapping
 magtag.add_text(
-    text_font="/fonts/Arial-Bold-12.bdf",
+    text_font="/Arial-Bold-12.bdf",
     text_position=(
         ((magtag.graphics.display.width - 100) // 2) + 100,
         (magtag.graphics.display.height // 2) + 40,
